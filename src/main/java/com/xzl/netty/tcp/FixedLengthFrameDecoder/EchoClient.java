@@ -44,7 +44,7 @@ public class EchoClient {
 
         });
 
-        ChannelFuture sync = b.connect("127.0.0.1", 8080).sync();
+        ChannelFuture sync = b.connect("47.100.37.176", 8080).sync();
         ChannelFuture sync1 = sync.channel().closeFuture().sync();
         group.shutdownGracefully();
     }
